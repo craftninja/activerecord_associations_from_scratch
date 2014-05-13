@@ -1,0 +1,19 @@
+<div class=subscriptions>
+  <table>
+    <tr>
+  <% @subscriptions.each do |subscription| %>
+    <td><%= subscription[:expires_on] %></td>
+  <% end %>
+    </tr>
+  </table>
+</div>
+
+<div class=subscribers>
+  <table>
+    <tr>
+      <% @subscribers.each do |subscriber| %>
+        <td><%= subscriber[:name] %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>
