@@ -1,0 +1,29 @@
+<div class=order-id>
+  <table>
+    <tr>
+      <% @orders.each do |order| %>
+        <td><%= order[:number] %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>
+
+<div class=line-items>
+  <table>
+    <tr>
+      <% @line_items.each do |line_item| %>
+        <td><%= line_item[:description] %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>
+
+<div class=address>
+  <table>
+    <tr>
+      <% @addresses.each do |address| %>
+        <td><%= address[:line1] %></td>
+      <% end %>
+    </tr>
+  </table>
+</div>
